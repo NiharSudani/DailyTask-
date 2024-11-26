@@ -1,8 +1,8 @@
 import sqlite3
 import emoji
 
-# Connect to SQLite database
-conn = sqlite3.connect("students.db")
+
+conn = sqlite3.connect("students1.db")
 cursor = conn.cursor()
 
 # Create a table if it doesn't exist

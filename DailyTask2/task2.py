@@ -1,4 +1,5 @@
 import sqlite3
+import emoji
 
 # Connect to SQLite database
 conn = sqlite3.connect("students.db")
@@ -93,8 +94,10 @@ def DeleteData():
         conn.commit()
         if cursor.rowcount:
             print("Student deleted successfully!")
+            ListStudents()
         else:
             print("Error: Student not found.")
+            3
     else:
         print("Error: Invalid ID.")
 
@@ -118,9 +121,13 @@ while True:
     elif choice == "4":
         DeleteData()
     elif choice == "5":
-        print("<<<Goodbye>>>")
+       # print("<<<Goodbye>>>")
+        print(emoji.emojize("<<<Goodbye:wave:>>>",language="alias",))
         break
     else:
         print("Error: Invalid choice. Please try again.")
 
+
 conn.close()
+
+

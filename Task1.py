@@ -1,12 +1,12 @@
 import random
 
-
+print("this is part of DailyTask") 
 
 Rock="""
     _______
 ---'   ____)
       (_____)
-      (_____)
+      (Rock_)
       (____)
 ---.__(___)
 """
@@ -14,7 +14,7 @@ Paper="""
      _______
 ---'    ____)____
            ______)
-          _______)
+          _Paper_)
          _______)
 ---.__________)
 """
@@ -22,7 +22,7 @@ Scissors="""
     _______
 ---'   ____)____
           ______)
-       __________)
+       _Scissors_)
       (____)
 ---.__(___)
 """
@@ -46,4 +46,6 @@ elif computer_choice > user_choice:
 elif computer_choice == user_choice:
     print("It's drow!")
 
-print("no error")
+
+
+print("Dode")
